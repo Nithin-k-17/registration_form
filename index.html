@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="b.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sliding-background"></div>
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <small class="error" id="nameError"></small>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age" required>
+            <small class="error" id="ageError"></small>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <small class="error" id="emailError"></small>
+
+            <label for="pincode">PIN Code:</label>
+            <input type="text" id="pincode" placeholder="Enter 6-digit PIN Code" required>
+            <small class="error" id="pinError"></small>
+
+            <label for="password">Password:
+                <span class="toggle-password" onclick="togglePassword()">👁</span>
+            </label>
+            <input type="password" id="password" placeholder="Enter your password" required   >
+
+           
+            <small class="error" id="passwordError"></small>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="a.js"></script>
+    
+
+</a>
+</body>
+</html>
